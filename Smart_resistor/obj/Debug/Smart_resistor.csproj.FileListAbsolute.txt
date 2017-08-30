@@ -1,0 +1,23 @@
+C:\Users\jan.kolcava\Disk Google\Programovani\C-sharp\WPF\Smart_resistor\Smart_resistor\obj\Debug\MainWindow.g.cs
+C:\Users\jan.kolcava\Disk Google\Programovani\C-sharp\WPF\Smart_resistor\Smart_resistor\obj\Debug\App.g.cs
+C:\Users\jan.kolcava\Disk Google\Programovani\C-sharp\WPF\Smart_resistor\Smart_resistor\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\jan.kolcava\Disk Google\Programovani\C-sharp\WPF\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor_MarkupCompile.cache
+C:\Users\jan.kolcava\Disk Google\Programovani\C-sharp\WPF\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor_MarkupCompile.lref
+C:\Smart_resistor\Smart_resistor\bin\Debug\Smart_resistor.exe.config
+C:\Smart_resistor\Smart_resistor\obj\Debug\MainWindow.g.cs
+C:\Smart_resistor\Smart_resistor\obj\Debug\App.g.cs
+C:\Smart_resistor\Smart_resistor\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor_MarkupCompile.cache
+C:\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor_MarkupCompile.lref
+C:\Smart_resistor\Smart_resistor\bin\Debug\Smart_resistor.exe
+C:\Smart_resistor\Smart_resistor\bin\Debug\Smart_resistor.pdb
+C:\Smart_resistor\Smart_resistor\obj\Debug\MainWindow.baml
+C:\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor.g.resources
+C:\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor.Properties.Resources.resources
+C:\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor.csproj.GenerateResource.Cache
+C:\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor.exe
+C:\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor.pdb
+C:\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor.csprojResolveAssemblyReference.cache
+C:\Users\jan.kolcava\Disk Google\Programovani\C-sharp\WPF\Smart_resistor\Smart_resistor\bin\Debug\Smart_resistor.exe.config
+C:\Users\jan.kolcava\Disk Google\Programovani\C-sharp\WPF\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor.exe
+C:\Users\jan.kolcava\Disk Google\Programovani\C-sharp\WPF\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor.pdb
