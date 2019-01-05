@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,12 @@ namespace resistor_code
         public static readonly string[] TRC = { null, "100", "50", "15", "25", null, "10", "5", null, null, null, null };
 
         private Point[] stripLocation = new Point[8];
+        public int Resister_band_count { get; set; }
+        string s_digit1 = "1";
+        string s_digit2 = "0";
+        string s_digit3 = "0";
+        string s_multiplier = "1";
+        string s_tolerance = "5";
 
         public Form1()
         {
@@ -33,8 +40,18 @@ namespace resistor_code
         {
             InitButtons();
             saveStripLocation();
+            button51_Click(null, null);
         }
 
+        private void ResetResistorValue()
+        {
+            s_digit1 = "1";
+            s_digit2 = "0";
+            s_digit3 = "0";
+            s_multiplier = "1";
+            s_tolerance = "5";
+
+        }
         private void saveStripLocation()
         {
             stripLocation[0] = tableLayoutPanel3.Location;
@@ -54,46 +71,58 @@ namespace resistor_code
 
         private void InitButtons()
         {
-            InitButtons(button1,  StripColors[0], Digit1[0]);
-            InitButtons(button2,  StripColors[1], Digit1[1]);
-            InitButtons(button3,  StripColors[2], Digit1[2]);
-            InitButtons(button4,  StripColors[3], Digit1[3]);
-            InitButtons(button5,  StripColors[4], Digit1[4]);
-            InitButtons(button6,  StripColors[5], Digit1[5]);
-            InitButtons(button7,  StripColors[6], Digit1[6]);
-            InitButtons(button8,  StripColors[7], Digit1[7]);
-            InitButtons(button9,  StripColors[8], Digit1[8]);
-            InitButtons(button10, StripColors[9], Digit1[9]);
+            InitButtons(buttonA0, StripColors[0], Digit1[0]);
+            InitButtons(buttonA1, StripColors[1], Digit1[1]);
+            InitButtons(buttonA2, StripColors[2], Digit1[2]);
+            InitButtons(buttonA3, StripColors[3], Digit1[3]);
+            InitButtons(buttonA4, StripColors[4], Digit1[4]);
+            InitButtons(buttonA5, StripColors[5], Digit1[5]);
+            InitButtons(buttonA6, StripColors[6], Digit1[6]);
+            InitButtons(buttonA7, StripColors[7], Digit1[7]);
+            InitButtons(buttonA8, StripColors[8], Digit1[8]);
+            InitButtons(buttonA9, StripColors[9], Digit1[9]);
 
-            InitButtons(button11, StripColors[0], Digit2[0]);
-            InitButtons(button12, StripColors[1], Digit2[1]);
-            InitButtons(button13, StripColors[2], Digit2[2]);
-            InitButtons(button14, StripColors[3], Digit2[3]);
-            InitButtons(button15, StripColors[4], Digit2[4]);
-            InitButtons(button16, StripColors[5], Digit2[5]);
-            InitButtons(button17, StripColors[6], Digit2[6]);
-            InitButtons(button18, StripColors[7], Digit2[7]);
-            InitButtons(button19, StripColors[8], Digit2[8]);
-            InitButtons(button20, StripColors[9], Digit2[9]);
+            InitButtons(buttonB0, StripColors[0], Digit2[0]);
+            InitButtons(buttonB1, StripColors[1], Digit2[1]);
+            InitButtons(buttonB2, StripColors[2], Digit2[2]);
+            InitButtons(buttonB3, StripColors[3], Digit2[3]);
+            InitButtons(buttonB4, StripColors[4], Digit2[4]);
+            InitButtons(buttonB5, StripColors[5], Digit2[5]);
+            InitButtons(buttonB6, StripColors[6], Digit2[6]);
+            InitButtons(buttonB7, StripColors[7], Digit2[7]);
+            InitButtons(buttonB8, StripColors[8], Digit2[8]);
+            InitButtons(buttonB9, StripColors[9], Digit2[9]);
 
-            InitButtons(button21, StripColors[0], Multiplier[0]);
-            InitButtons(button22, StripColors[1], Multiplier[1]);
-            InitButtons(button23, StripColors[2], Multiplier[2]);
-            InitButtons(button24, StripColors[3], Multiplier[3]);
-            InitButtons(button25, StripColors[4], Multiplier[4]);
-            InitButtons(button26, StripColors[5], Multiplier[5]);
-            InitButtons(button27, StripColors[6], Multiplier[6]);
-            InitButtons(button28, StripColors[7], Multiplier[7]);
-            InitButtons(button29, StripColors[8], Multiplier[8]);
+            InitButtons(buttonC0, StripColors[0], Digit3[0]);
+            InitButtons(buttonC1, StripColors[1], Digit3[1]);
+            InitButtons(buttonC2, StripColors[2], Digit3[2]);
+            InitButtons(buttonC3, StripColors[3], Digit3[3]);
+            InitButtons(buttonC4, StripColors[4], Digit3[4]);
+            InitButtons(buttonC5, StripColors[5], Digit3[5]);
+            InitButtons(buttonC6, StripColors[6], Digit3[6]);
+            InitButtons(buttonC7, StripColors[7], Digit3[7]);
+            InitButtons(buttonC8, StripColors[8], Digit3[8]);
+            InitButtons(buttonC9, StripColors[9], Digit3[9]);
 
-            InitButtons(button32, StripColors[1], Multiplier[1]);
-            InitButtons(button33, StripColors[2], Multiplier[2]);
-            InitButtons(button36, StripColors[5], Multiplier[5]);
-            InitButtons(button37, StripColors[6], Multiplier[6]);
-            InitButtons(button38, StripColors[7], Multiplier[7]);
- 
+            InitButtons(buttonD0, StripColors[0], Multiplier[0]);
+            InitButtons(buttonD1, StripColors[1], Multiplier[1]);
+            InitButtons(buttonD2, StripColors[2], Multiplier[2]);
+            InitButtons(buttonD3, StripColors[3], Multiplier[3]);
+            InitButtons(buttonD4, StripColors[4], Multiplier[4]);
+            InitButtons(buttonD5, StripColors[5], Multiplier[5]);
+            InitButtons(buttonD6, StripColors[6], Multiplier[6]);
+            InitButtons(buttonD7, StripColors[7], Multiplier[7]);
+            InitButtons(buttonDA, StripColors[10], Multiplier[10]);
+            InitButtons(buttonDB, StripColors[11], Multiplier[11]);
 
-
+            InitButtons(buttonE1, StripColors[1], Tolerance[1]);
+            InitButtons(buttonE2, StripColors[2], Tolerance[2]);
+            InitButtons(buttonE5, StripColors[5], Tolerance[5]);
+            InitButtons(buttonE6, StripColors[6], Tolerance[6]);
+            InitButtons(buttonE7, StripColors[7], Tolerance[7]);
+            InitButtons(buttonE8, StripColors[8], Tolerance[8]);
+            InitButtons(buttonEA, StripColors[10], Tolerance[10]);
+            InitButtons(buttonEB, StripColors[11], Tolerance[11]);
         }
 
         private void InitButtons(Button button, Color color, string v)
@@ -111,18 +140,99 @@ namespace resistor_code
         {
             // set strip for 4 bands resistor
             tableLayoutPanel5.Visible = false;
-            tableLayoutPanel3.Left = tableLayoutPanel1.Left;                
+            tableLayoutPanel3.Left = tableLayoutPanel1.Left;
             tableLayoutPanel4.Left = tableLayoutPanel8.Left;
             tableLayoutPanel6.Left = tableLayoutPanel9.Left;
             tableLayoutPanel7.Left = tableLayoutPanel10.Left;
-
+            pictureBox6.Visible = false;
+            Resister_band_count = 4;
+            Console.WriteLine("{0} {1} {2} {3}", s_digit1, s_digit2, s_digit3, s_multiplier);
+            CalculateResistorValue();
         }
 
         private void button52_Click(object sender, EventArgs e)
         {
             tableLayoutPanel5.Visible = true;
+            pictureBox6.Visible = true;
             restoreStrip();
+            Resister_band_count = 5;
+            Console.WriteLine("{0} {1} {2} {3}", s_digit1, s_digit2, s_digit3, s_multiplier);
+            CalculateResistorValue();
         }
 
+        private void ButtonStripA_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            int number = Convert.ToInt16(btn.Text);
+            pictureBox3.BackColor = StripColors[number];
+            pictureBox3.BorderStyle = BorderStyle.None;
+            s_digit1 = btn.Text;
+            CalculateResistorValue();
+        }
+
+        private void ButtonStripB_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            int number = Convert.ToInt16(btn.Text);
+            pictureBox4.BackColor = StripColors[number];
+            pictureBox4.BorderStyle = BorderStyle.None;
+            s_digit2 = btn.Text;
+            CalculateResistorValue();
+        }
+
+        private void ButtonStripC_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            int number = Convert.ToInt16(btn.Text);
+            pictureBox5.BackColor = StripColors[number];
+            pictureBox5.BorderStyle = BorderStyle.None;
+            s_digit3 = btn.Text;
+            CalculateResistorValue();
+
+        }
+
+        private void ButtonStripD_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            int number = Convert.ToInt16(btn.Tag);
+            switch (Resister_band_count)
+            {
+                case 4:
+                    pictureBox5.BackColor = StripColors[number];
+                    pictureBox5.BorderStyle = BorderStyle.None;
+                    break;
+                case 5:
+                    pictureBox6.BackColor = StripColors[number];
+                    pictureBox6.BorderStyle = BorderStyle.None;
+                    break;
+            }
+            s_multiplier = btn.Text;
+            CalculateResistorValue();
+        }
+        private void ButtonStripE_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            int number = Convert.ToInt16(btn.Tag);
+            pictureBox7.BackColor = StripColors[number];
+            pictureBox7.BorderStyle = BorderStyle.None;
+            s_tolerance = Tolerance[number];
+            CalculateResistorValue();
+        }
+        private void CalculateResistorValue()
+        {
+            double multiplier = MathHelper.RemoveSufix(s_multiplier);
+            string s_value = s_digit1 + s_digit2 + s_digit3;
+            if (Resister_band_count == 4)
+                s_value = s_digit1 + s_digit2;
+            if (Resister_band_count == 5)
+                s_value = s_digit1 + s_digit2 + s_digit3;
+            Console.WriteLine(s_value);
+            double value = double.Parse(s_value, CultureInfo.InvariantCulture);
+            value *= multiplier;
+            s_value = MathHelper.AddSufix(value);
+            string output = String.Format("{0}Ω ±{1}%", s_value, s_tolerance );
+            Console.WriteLine(output);
+            label1.Text = output;
+        }
     }
 }
