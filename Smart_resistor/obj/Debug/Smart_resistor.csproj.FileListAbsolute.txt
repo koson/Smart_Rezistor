@@ -21,3 +21,23 @@ C:\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor.csprojResolveAssemblyR
 C:\Users\jan.kolcava\Disk Google\Programovani\C-sharp\WPF\Smart_resistor\Smart_resistor\bin\Debug\Smart_resistor.exe.config
 C:\Users\jan.kolcava\Disk Google\Programovani\C-sharp\WPF\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor.exe
 C:\Users\jan.kolcava\Disk Google\Programovani\C-sharp\WPF\Smart_resistor\Smart_resistor\obj\Debug\Smart_resistor.pdb
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\bin\Debug\Smart_resistor.exe.config
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\bin\Debug\Smart_resistor.exe
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\bin\Debug\Smart_resistor.pdb
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\Smart_resistor.csprojAssemblyReference.cache
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\MainWindow.g.cs
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\App.g.cs
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\Smart_resistor_MarkupCompile.cache
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\Smart_resistor_MarkupCompile.lref
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\MainWindow.baml
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\Smart_resistor.g.resources
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\Smart_resistor.Properties.Resources.resources
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\Smart_resistor.csproj.GenerateResource.cache
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\Smart_resistor.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\Smart_resistor.exe
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\Smart_resistor.pdb
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\bin\Debug\Smart_resistor.exe.manifest
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\bin\Debug\Smart_resistor.application
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\Smart_resistor.exe.manifest
+D:\VisualStudio\Github_repos\Smart_Rezistor2\Smart_resistor\obj\Debug\Smart_resistor.application

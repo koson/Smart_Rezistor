@@ -216,10 +216,10 @@
 
         <Grid Grid.Row="3">
             <StackPanel x:Name="sp_countOfStrips_buttons" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="bt_3_strips" Width="80" Margin="5,0" Click="bt_3_strips_Click">3 proužky</Button>
-                <Button x:Name="bt_4_strips" Width="80" Margin="5,0" Click="bt_4_strips_Click">4 proužky</Button>
-                <Button x:Name="bt_5_strips" Width="80" Margin="5,0" Click="bt_5_strips_Click">5 proužků</Button>
-                <Button x:Name="bt_6_strips" Width="80" Margin="5,0" Click="bt_6_strips_Click">6 proužků</Button>
+                <Button x:Name="bt_3_strips" Width="80" Margin="5,0" Click="bt_3_strips_Click">3 bands</Button>
+                <Button x:Name="bt_4_strips" Width="80" Margin="5,0" Click="bt_4_strips_Click">4 bands</Button>
+                <Button x:Name="bt_5_strips" Width="80" Margin="5,0" Click="bt_5_strips_Click">5 bands</Button>
+                <Button x:Name="bt_6_strips" Width="80" Margin="5,0" Click="bt_6_strips_Click">6 bands</Button>
             </StackPanel>
         </Grid>
     </Grid>

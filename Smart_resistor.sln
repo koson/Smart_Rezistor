@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart_resistor", "Smart_resistor\Smart_resistor.csproj", "{9FE9775D-AF4F-4DF2-B922-66F1E6142A46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "resistor_code", "resistor_code\resistor_code.csproj", "{9FF3232C-AE86-471F-B34D-8B872699EBBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{9FE9775D-AF4F-4DF2-B922-66F1E6142A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FE9775D-AF4F-4DF2-B922-66F1E6142A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FE9775D-AF4F-4DF2-B922-66F1E6142A46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FF3232C-AE86-471F-B34D-8B872699EBBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FF3232C-AE86-471F-B34D-8B872699EBBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FF3232C-AE86-471F-B34D-8B872699EBBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FF3232C-AE86-471F-B34D-8B872699EBBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBBD1FA1-DD49-40A4-AF99-B338FAC14CF9}
 	EndGlobalSection
 EndGlobal
