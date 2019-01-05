@@ -146,7 +146,6 @@ namespace resistor_code
             tableLayoutPanel7.Left = tableLayoutPanel10.Left;
             pictureBox6.Visible = false;
             Resister_band_count = 4;
-            Console.WriteLine("{0} {1} {2} {3}", s_digit1, s_digit2, s_digit3, s_multiplier);
             CalculateResistorValue();
         }
 
@@ -156,7 +155,6 @@ namespace resistor_code
             pictureBox6.Visible = true;
             restoreStrip();
             Resister_band_count = 5;
-            Console.WriteLine("{0} {1} {2} {3}", s_digit1, s_digit2, s_digit3, s_multiplier);
             CalculateResistorValue();
         }
 
@@ -226,12 +224,10 @@ namespace resistor_code
                 s_value = s_digit1 + s_digit2;
             if (Resister_band_count == 5)
                 s_value = s_digit1 + s_digit2 + s_digit3;
-            Console.WriteLine(s_value);
             double value = double.Parse(s_value, CultureInfo.InvariantCulture);
             value *= multiplier;
             s_value = MathHelper.AddSufix(value);
             string output = String.Format("{0}Ω ±{1}%", s_value, s_tolerance );
-            Console.WriteLine(output);
             label1.Text = output;
         }
     }
